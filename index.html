@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiew Ying Zen Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Fira+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Ying Zen</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-item">Home</a></li>
+                <li><a href="#skills" class="nav-item">Skills</a></li>
+                <li><a href="#projects" class="nav-item">Projects</a></li>
+                <li><a href="#contact" class="nav-item">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HOME / ABOUT ME SECTION -->
+        <section id="home" class="section about">
+            <div class="about-content">
+                <img src="assets/profile_photo.jpg" alt="Tiew Ying Zen" class="profile-img">
+                <div>
+                    <h1>Hi, I'm <span class="highlight">Tiew Ying Zen</span> 👋</h1>
+                    <p>
+                        Hi, my name is Ying Zen. I am from Malaysia and I am currently studying Bachelor of Software Engineering in Sunway University.
+                        I aspire to become a full-stack developer who creates efficient and meaningful digital solutions.
+                        My goal is to contribute to innovative projects that make technology more accessible for everyone.
+                    </p>
+                    <a href="#contact" class="btn primary-btn">Let's Connect</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="section skills">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>HTML5 &amp; CSS3</li>
+                        <li>Java</li>
+                        <li>Java Script</li>
+                        <li>Python</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Software &amp; Tools</h3>
+                    <ul>
+                        <li>Git &amp; GitHub</li>
+                        <li>Responsive Web Design</li>
+                        <li>UI/UX Design</li>
+                        <li>Replit</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="section projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-carousel" id="carousel">
+                <button class="carousel-btn left" id="carouselLeft">&#8249;</button>
+                <div class="carousel-track" id="carouselTrack">
+                    <div class="project-card">
+                        <img src="assets/project1.png" alt="Course Registration System">
+                        <h3>Course Registration System</h3>
+                        <p>
+                            A Python-based application designed to manage student course registration. It allows students to enroll in courses, view and drop courses, and manage their personal information through a simple text-based interface. Includes input validation and file handling for robust data management.
+                        </p>
+                        <a href="https://replit.com/@dakifn77/Final-Project" target="_blank" class="btn">View on Replit</a>
+                    </div>
+                    <div class="project-card">
+                        <img src="assets/project2.png" alt="Online Menu">
+                        <h3>Online Menu</h3>
+                        <p>
+                            A responsive web-based menu for a cafe, created using HTML and CSS. The menu organizes food and drinks into categories with clearly displayed prices, using tables and color coding for easy navigation on any device.
+                        </p>
+                    </div>
+                </div>
+                <button class="carousel-btn right" id="carouselRight">&#8250;</button>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section contact">
+            <h2 class="section-title">Contact</h2>
+            <form id="contactForm" class="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error" id="nameError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error" id="emailError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <span class="error" id="messageError"></span>
+                </div>
+                <button type="submit" class="btn primary-btn">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:yingzentiew@gmail.com">yingzentiew@gmail.com</a></p>
+            </div>
+        </section>
+    </main>
+
+    <button id="backToTop" title="Back to top">&#8679;</button>
+    <footer>
+        <p>&copy; 2025 Tiew Ying Zen. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
